@@ -288,6 +288,7 @@ func NewTxOut(value int64, pkScript []byte) *TxOut {
 // inputs and outputs.
 type MsgTx struct {
 	Version  int32
+	Time     uint32 // Peercoin transaction timestamp
 	TxIn     []*TxIn
 	TxOut    []*TxOut
 	LockTime uint32
